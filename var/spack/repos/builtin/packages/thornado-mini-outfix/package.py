@@ -5,9 +5,9 @@
 
 
 from spack import *
-from spack.pkg.builtin.thornado-mini import ThornadoMini as Unpatched
+from spack.pkg.builtin.thornado-mini import ThornadoMini
 
-class ThornadoMini(Unpatched):
+class ThornadoMiniOutfix(ThornadoMini):
     patch(
         "https://raw.githubusercontent.com/HPC-Hackathon-Clangers/Cloud-HPC-Hackathon-2021/laura/Applications/MiniApps/thornado-mini/output_dir.patch",
         when="@1.0",
