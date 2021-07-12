@@ -6,8 +6,6 @@
 
 from spack import *
 from spack.pkg.builtin.thornado-mini import ThornadoMini as Unpatched
-import os
-
 
 class ThornadoMini(Unpatched):
     patch(
